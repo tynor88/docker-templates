@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>UnoEuroDNS</Name>
+  <Repository>tynor88/unoeuro-dns</Repository>
+  <Registry>https://hub.docker.com/r/tynor88/unoeuro-dns</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview>Keep your DNS records for your own domains up-to-date with this UnoEuro DDNS script.&#xD;
+[br][br]&#xD;
+[b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+[b]/config[/b] Where unoeuro-dns should store settings and logs[br]&#xD;
+[b]DOMAIN:[/b] The name of the domain (product) you wish to update (without www). Can be in punycode format. Ie. "example.com"[br] &#xD;
+[b]HOSTNAME:[/b] The name of the A record you wish to update. The domain should not be appended to this. Ie. use "home", not "home.example.com"[br]&#xD;
+[b]APIKEY:[/b] The API key for the UnoEuro account. Found in UnoEuro's controlpanel[br]</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://pbs.twimg.com/profile_images/458859837355347968/TxH08CKp.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1461947768</DateInstalled>
+  <Description>Keep your DNS records for your own domains up-to-date with this UnoEuro DDNS script.&#xD;
+[br][br]&#xD;
+[b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+[b]/config[/b] Where unoeuro-dns should store settings and logs[br]&#xD;
+[b]DOMAIN:[/b] The name of the domain (product) you wish to update (without www). Can be in punycode format. Ie. "example.com"[br] &#xD;
+[b]HOSTNAME:[/b] The name of the A record you wish to update. The domain should not be appended to this. Ie. use "home", not "home.example.com"[br]&#xD;
+[b]APIKEY:[/b] The API key for the UnoEuro account. Found in UnoEuro's controlpanel[br]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/UnoEuroDNS</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/media/</HostDir>
+      <ContainerDir>/unraid</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>HOSTNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>APIKEY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>
