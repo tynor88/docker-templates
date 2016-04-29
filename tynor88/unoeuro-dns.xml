@@ -4,7 +4,7 @@
   <Description>Keep your DNS records for your own domains updated with this UnoEuro DDNS script.
     [br][br]&#xD;
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] Where unoeuro-dns should store settings and logs[br]
+    [b]/config[/b] Where UnoEuroDNS should store settings[br]
     [b]DOMAIN:[/b] The name of the domain (product) you wish to update (without www). Can be in punycode format. Ie. "example.com"[br]
     [b]HOSTNAME:[/b] The name of the A record you wish to update. The domain should not be appended to this. Ie. use "home", not "home.example.com"[br]
     [b]APIKEY:[/b] The API key for the UnoEuro account. Found in UnoEuro's controlpanel[br]
