@@ -40,6 +40,13 @@
       <Value></Value>
     </Variable>
   </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/UnoEuroDNS</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <WebUI></WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/unoeuro_small.png</Icon>
