@@ -10,7 +10,7 @@
     [b]APIKEY:[/b] The API key for the UnoEuro account. Found in UnoEuro's controlpanel[br]
   </Description>
   <Overview>Keep your DNS records for your own domains updated with this UnoEuro DDNS script.</Overview>
-  <Support></Support>
+  <Support>https://lime-technology.com/forum/index.php?topic=48772.0</Support>
   <Registry>https://hub.docker.com/r/tynor88/unoeuro-dns</Registry>
   <GitHub>https://github.com/tynor88/docker-unoeuro-dns</GitHub>
   <Repository>tynor88/unoeuro-dns</Repository>
