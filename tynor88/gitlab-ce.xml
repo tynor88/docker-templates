@@ -12,7 +12,7 @@
     [b]/var/log/gitlab[/b] For storing logs[br]
   </Description>
   <Overview>GitLab Community Edition docker image based on the Omnibus package.</Overview>
-  <Support>https://lime-technology.com/forum/index.php?topic=48772.0</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=50362.0</Support>
   <Registry>https://hub.docker.com/r/gitlab/gitlab-ce/</Registry>
   <GitHub>https://github.com/gitlabhq/gitlabhq</GitHub>
   <Repository>gitlab/gitlab-ce</Repository>
