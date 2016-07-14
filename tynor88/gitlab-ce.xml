@@ -38,6 +38,13 @@
       </Port>
     </Publish>
   </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/gitlab-ce/config</HostDir>
+      <ContainerDir>/etc/gitlab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment/>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/gitlab.png</Banner>
