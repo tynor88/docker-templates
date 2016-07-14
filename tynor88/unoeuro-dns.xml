@@ -53,7 +53,7 @@
     </Volume>
   </Data>
   <WebUI></WebUI>
-  <Banner></Banner>
+  <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/unoeuro.png</Banner>
   <Icon>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/unoeuro_small.png</Icon>
   <Beta>False</Beta>
   <Category>Network:DNS</Category>
