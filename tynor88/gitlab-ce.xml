@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>GitLab-CE</Name>
+  <Description>GitLab Community Edition docker image based on the Omnibus package.
+    [br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/etc/gitlab[/b] For storing the GitLab configuration files (use cache drive)[br]
+    [b]/var/opt/gitlab[/b] For storing application data (use cache drive)[br]
+    [b]/var/log/gitlab[/b] For storing logs[br]
+  </Description>
+  <Overview>GitLab Community Edition docker image based on the Omnibus package.</Overview>
+  <Support>https://lime-technology.com/forum/index.php?topic=48772.0</Support>
+  <Registry>https://hub.docker.com/r/gitlab/gitlab-ce/</Registry>
+  <GitHub>https://github.com/gitlabhq/gitlabhq</GitHub>
+  <Repository>gitlab/gitlab-ce</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort></ContainerPort>
+        <Protocol></Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/gitlab.png</Banner>
+  <Icon>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/gitlab_small.png</Icon>
+  <Beta>False</Beta>
+  <Category>Backup: Cloud: Network:Web Productivity: Tools:</Category>
+  <Date>2016-07-14</Date>
+</Container>
