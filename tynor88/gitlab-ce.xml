@@ -19,9 +19,19 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort></HostPort>
-        <ContainerPort></ContainerPort>
-        <Protocol></Protocol>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>22</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
@@ -30,6 +40,12 @@
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/gitlab.png</Banner>
   <Icon>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/gitlab_small.png</Icon>
+  <Config Type="Port" Name="Web Interface Port (HTTP)" Target="80" Default="80" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's Web UI port you can access via a web browser.">80</Config>
+  <Config Type="Port" Name="Web Interface Port (HTTPS)" Target="443" Default="443" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's Web UI SSL port you can access via a web browser.">443</Config>
+  <Config Type="Port" Name="SSH Port" Target="22" Default="22" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's SSH port.">22</Config>
+  <Config Type="Path" Name="Config Storage Path" Target="/etc/gitlab" Default="/mnt/cache/appdata/gitlab-ce/config" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its configuration files.">/mnt/cache/appdata/gitlab-ce</Config>
+  <Config Type="Path" Name="Log Storage Path" Target="/var/log/gitlab" Default="/mnt/cache/appdata/gitlab-ce/log" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its logs.">/mnt/cache/appdata/gitlab-ce/log</Config>
+  <Config Type="Path" Name="Application Data Storage Path" Target="/var/opt/gitlab" Default="/mnt/cache/appdata/gitlab-ce/data" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its logs.">/mnt/cache/appdata/gitlab-ce/data</Config>
   <Beta>False</Beta>
   <Category>Backup: Cloud: Network:Web Productivity: Tools:</Category>
   <Date>2016-07-14</Date>
