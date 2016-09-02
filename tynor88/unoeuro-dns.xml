@@ -60,7 +60,9 @@
   <Date>2016-10-07</Date> 
   <Changes>
     [center][font size=5]UnoEuroDNS Change Log[/font][/center]
-
+    
+    [b]2016.09.02:[/b] 
+        * Fixed a response check, as UnoEuro's Api changed
     [b]2016.07.10:[/b] 
         * Added support for Pushbullet notifications (optional)
         * Update to latest phusion baseimage (0.9.19)
