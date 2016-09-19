@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Rclone</Name>
+  <Repository>tynor88/rclone:dev</Repository>
+  <Registry>https://hub.docker.com/r/tynor88/rclone/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview>Docker for Rclone - a command line program to sync files and directories to and from various cloud services.</Overview>
+  <WebUI/>
+  <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/rclone.png</Banner>
+  <Icon>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/rclone_small.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1474313334</DateInstalled>
+  <Description>Docker for Rclone - a command line program to sync files and directories to and from various cloud services.
+    [br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] The path to the data which should be backed up by Rclone[br]
+    [b]/data[/b] The path to the data which should be backed up by Rclone[br]
+    [b]SYNC_DESTINATION[/b] The destination that the data should be backed up to (must be the same name as specified in .rclone.conf)[br]
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>SYNC_DESTINATION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SYNC_DESTINATION_SUBPATH</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/rclone/config/" Mode="rw" Description="The path where the .rclone.conf file is" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data Path" Target="/data" Default="" Mode="ro" Description="The path to the data which should be backed up by Rclone" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Sync Destination" Target="SYNC_DESTINATION" Default="" Mode="" Description="The destination that the data should be backed up to (must be the same name as specified in .rclone.conf)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Sync Destination Subpath" Target="SYNC_DESTINATION_SUBPATH" Default="" Mode="" Description="If the data should be backed up to a subpath on the destionation (will automaticly be created if it does not exist)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Beta>True</Beta>
+  <Category>Backup: Cloud:</Category>
+  <Date>2016-09-19</Date> 
+  <Changes>
+    [center][font size=5]Rclone Change Log[/font][/center]
+
+    [b]2016.09.19:[/b] 
+        * Initial beta version
+  </Changes>
+  <Project>http://rclone.org/</Project>
+  <BaseImage>quay.io/justcontainers/base-alpine</BaseImage>
+  <Branch>
+    <Tag>dev</Tag>
+    <TagDescription>dev branch</TagDescription>
+  </Branch>
+</Container>
