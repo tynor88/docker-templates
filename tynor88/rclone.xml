@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/tynor88/rclone/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://lime-technology.com/forum/index.php?topic=52033.0</Support>
   <Overview>Docker for Rclone - a command line program to sync files and directories to and from various cloud services.</Overview>
   <WebUI/>
   <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/rclone.png</Banner>
