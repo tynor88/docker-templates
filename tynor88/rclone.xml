@@ -11,13 +11,14 @@
   <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/rclone.png</Banner>
   <Icon>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/rclone_small.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1474313334</DateInstalled>
   <Description>Docker for Rclone - a command line program to sync files and directories to and from various cloud services.
     [br][br]&#xD;
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] The path to the data which should be backed up by Rclone[br]
     [b]/data[/b] The path to the data which should be backed up by Rclone[br]
     [b]SYNC_DESTINATION[/b] The destination that the data should be backed up to (must be the same name as specified in .rclone.conf)[br]
+	[b]SYNC_DESTINATION_SUBPATH[/b] (Advanced) If the data should be backed up to a subpath on the destionation (will automaticly be created if it does not exist)[br]
+	[b]CRON_SCHEDULE[/b] (Advanced) A custom cron schedule which will override the default value of 0 * * * * (hourly)[br]
   </Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -51,12 +52,15 @@
   <Config Name="Data Path" Target="/data" Default="" Mode="ro" Description="The path to the data which should be backed up by Rclone" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Sync Destination" Target="SYNC_DESTINATION" Default="" Mode="" Description="The destination that the data should be backed up to (must be the same name as specified in .rclone.conf)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Sync Destination Subpath" Target="SYNC_DESTINATION_SUBPATH" Default="" Mode="" Description="If the data should be backed up to a subpath on the destionation (will automaticly be created if it does not exist)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Cron Schedule" Target="CRON_SCHEDULE" Default="0 * * * *" Mode="" Description="A custom cron schedule which will override the default value of 0 * * * * (hourly)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Beta>True</Beta>
   <Category>Backup: Cloud:</Category>
   <Date>2016-09-19</Date> 
   <Changes>
     [center][font size=5]Rclone Change Log[/font][/center]
 
+	[b]2016.09.24:[/b] 
+        * Possible to specify a custom cron schedule through a variable
     [b]2016.09.19:[/b] 
         * Initial beta version
   </Changes>
