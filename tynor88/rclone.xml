@@ -18,6 +18,7 @@
     [b]/data[/b] The path to the data which should be backed up by Rclone[br]
     [b]SYNC_DESTINATION[/b] The destination that the data should be backed up to (must be the same name as specified in .rclone.conf)[br]
 	[b]SYNC_DESTINATION_SUBPATH[/b] (Advanced) If the data should be backed up to a subpath on the destionation (will automaticly be created if it does not exist)[br]
+	[b]CRON_SCHEDULE[/b] (Advanced) A custom cron schedule which will override the default value of: [i]0 * * * *[/i] (hourly)[br]
 	[b]SYNC_COMMAND[/b] (Advanced) A custom rclone command which will override the default value of: [i]rclone sync /data $SYNC_DESTINATION:/$SYNC_DESTINATION_SUBPATH[/i][br]
   </Description>
   <Networking>
