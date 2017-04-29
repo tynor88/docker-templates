@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/tynor88/rclone/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://lime-technology.com/forum/index.php?topic=52033.0</Support>
+  <Support>https://forums.lime-technology.com/topic/50309-support-rclone-beta/</Support>
   <Overview>Docker for Rclone - a command line program to sync files and directories to and from various cloud services.</Overview>
   <WebUI/>
   <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/rclone.png</Banner>
@@ -14,7 +14,7 @@
   <Description>Docker for Rclone - a command line program to sync files and directories to and from various cloud services.
     [br][br]&#xD;
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] The path to the data which should be backed up by Rclone[br]
+    [b]/config[/b] The path to where the .rclone.conf file is[br]
     [b]/data[/b] The path to the data which should be backed up by Rclone[br]
     [b]SYNC_DESTINATION[/b] The destination that the data should be backed up to (must be the same name as specified in .rclone.conf)[br]
 	[b]SYNC_DESTINATION_SUBPATH[/b] (Advanced) If the data should be backed up to a subpath on the destionation (will automaticly be created if it does not exist)[br]
@@ -59,7 +59,7 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/rclone/config/" Mode="rw" Description="The path where the .rclone.conf file is" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/rclone/config/" Mode="rw" Description="The path to where the .rclone.conf file is" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Data Path" Target="/data" Default="" Mode="ro" Description="The path to the data which should be backed up by Rclone" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Sync Destination" Target="SYNC_DESTINATION" Default="" Mode="" Description="The destination that the data should be backed up to (must be the same name as specified in .rclone.conf)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Sync Destination Subpath" Target="SYNC_DESTINATION_SUBPATH" Default="" Mode="" Description="If the data should be backed up to a subpath on the destionation (will automaticly be created if it does not exist)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
