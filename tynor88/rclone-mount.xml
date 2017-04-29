@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/tynor88/rclone-mount/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://lime-technology.com/forum/index.php?topic=52033.0</Support>
+  <Support>https://forums.lime-technology.com/topic/56921-support-rclone-mount-with-exposable-fuse-support-for-plex-beta/</Support>
   <Overview>Docker for Rclone FUSE mount feature (exposable to host and other docker containers, e.g. Plex, Nextcloud, glFTPd)</Overview>
   <WebUI/>
   <Banner>https://raw.githubusercontent.com/tynor88/docker-templates/master/images/rclone.png</Banner>
