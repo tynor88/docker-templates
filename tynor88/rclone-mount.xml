@@ -15,7 +15,7 @@
     [br][br]&#xD;
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] The path to where the .rclone.conf file is[br]
-    [b]RCLONE_REMOTE_MOUNT[/b] The destination that the data should be backed up to (must be the same name as specified in .rclone.conf. E.g. [i]AmazonEncrypted:&lt;SubPath&gt;[/i])[br]
+    [b]RCLONE_REMOTE_MOUNT[/b] The destination that the data should be backed up to (must be the same name as specified in .rclone.conf. E.g. [i]AmazonEncrypted:[/i])[br]
     [b]RCLONE_MOUNT_OPTIONS[/b] (Advanced) Extra mount options that can be used, see: https://rclone.org/commands/rclone_mount/ . E.g. [i]--read-only --buffer-size=1G --max-read-ahead=200M --acd-templink-threshold=0 --dir-cache-time=60m --timeout=30s --contimeout=15s --retries=3 --low-level-retries=1 --stats=0 -v[/i][br]
     [b]RCLONE_CONFIG_PASS[/b] (Advanced) The password for the .rclone.conf pass (if specified when creating the config file)[br]
   </Description>
@@ -48,7 +48,7 @@
     </Variable>
   </Environment>
   <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/rclone/config/" Mode="rw" Description="The path where the .rclone.conf file is" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="REMOTE_MOUNT" Target="REMOTE_MOUNT" Default="" Mode="" Description="The destination that the data should be backed up to (must be the same name as specified in .rclone.conf. E.g. <em>Amazon Encrypted: &lt;SubPath&gt;</em>)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="REMOTE_MOUNT" Target="REMOTE_MOUNT" Default="" Mode="" Description="The destination that the data should be backed up to (must be the same name as specified in .rclone.conf. E.g. &lt;em&gt;Amazon Encrypted:&lt;SubPath&gt;&lt;/em&gt;)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="RCLONE_MOUNT_OPTIONS" Target="RCLONE_MOUNT_OPTIONS" Default="--read-only" Mode="" Description="Extra mount options that can be used, see: https://rclone.org/commands/rclone_mount/ . E.g.: --read-only --buffer-size=1G --max-read-ahead=200M --acd-templink-threshold=0 --dir-cache-time=60m --timeout=30s --contimeout=15s --retries=3 --low-level-retries=1 --stats=0 -v" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="RCLONE_CONFIG_PASS" Target="RCLONE_CONFIG_PASS" Default="" Mode="" Description="The password for the .rclone.conf pass (if specified when creating the config file)" Type="Variable" Display="advanced" Required="false" Mask="true"/>
   <Beta>True</Beta>
