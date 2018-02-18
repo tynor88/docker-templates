@@ -69,8 +69,4 @@
   </Changes>
   <Project>http://rclone.org/</Project>
   <BaseImage>https://hub.docker.com/_/alpine/</BaseImage>
-  <Branch>
-    <Tag>dev</Tag>
-    <TagDescription>dev branch</TagDescription>
-  </Branch>
 </Container>
