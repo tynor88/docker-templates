@@ -80,8 +80,4 @@
   </Changes>
   <Project>http://rclone.org/</Project>
   <BaseImage>quay.io/justcontainers/base-alpine</BaseImage>
-  <Branch>
-    <Tag>dev</Tag>
-    <TagDescription>dev branch</TagDescription>
-  </Branch>
 </Container>
