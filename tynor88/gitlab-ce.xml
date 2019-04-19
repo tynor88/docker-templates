@@ -34,7 +34,7 @@
       </Port>
       <Port>
         <HostPort>9022</HostPort>
-        <ContainerPort>9022</ContainerPort>
+        <ContainerPort>22</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
