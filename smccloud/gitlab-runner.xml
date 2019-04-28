@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>gitlab-runner</Name>
+  <Repository>gitlab/gitlab-runner</Repository>
+  <Registry>https://hub.docker.com/r/gitlab/gitlab-runner/</Registry>
+  <Network Default="bridge">bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/gitlab/gitlab-runner/</Support>
+  <Project/>
+  <Overview>GitLab CI Multi Runner used to fetch and run pipeline jobs with GitLab CI   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Banner>https://raw.githubusercontent.com/smccloud/docker-templates/master/images/gitlab.png</Banner>
+  <Icon>https://raw.githubusercontent.com/smccloud/docker-templates/master/images/gitlab_small.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1555704241</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>GitLab CI Multi Runner used to fetch and run pipeline jobs with GitLab CI   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Container Path: /var/run/docker.sock" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Host Path 2" Target="/mnt/user/appdata/gitlab-runner" Default="" Mode="rw" Description="Container Path: /mnt/user/appdata/gitlab-runner" Type="Path" Display="always" Required="false" Mask="false">/etc/gitlab-runner</Config>
+</Container>
