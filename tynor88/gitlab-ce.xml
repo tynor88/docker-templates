@@ -63,7 +63,7 @@
   <Network Default="bridge">bridge</Network>
   <Config Type="Port" Name="Web Interface Port (HTTP)" Target="9080" Default="9080" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's Web UI port you can access via a web browser.">9080</Config>
   <Config Type="Port" Name="Web Interface Port (HTTPS)" Target="9443" Default="9443" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's Web UI SSL port you can access via a web browser.">9443</Config>
-  <Config Type="Port" Name="SSH Port" Target="9022" Default="9022" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's SSH port.">9022</Config>
+  <Config Type="Port" Name="SSH Port" Target="22" Default="9022" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's SSH port.">9022</Config>
   <Config Type="Path" Name="Config Storage Path" Target="/etc/gitlab" Default="/mnt/cache/appdata/gitlab-ce/config" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its configuration files (use cache drive).">/mnt/cache/appdata/gitlab-ce/config</Config>
   <Config Type="Path" Name="Application Data Storage Path" Target="/var/opt/gitlab" Default="/mnt/cache/appdata/gitlab-ce/data" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its application data (use cache drive).">/mnt/cache/appdata/gitlab-ce/data</Config>
   <Config Type="Path" Name="Log Storage Path" Target="/var/log/gitlab" Default="/mnt/cache/appdata/gitlab-ce/log" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its logs.">/mnt/cache/appdata/gitlab-ce/log</Config>
