@@ -26,10 +26,6 @@ shell scripts with network connections.
   <Registry>https://hub.docker.com/r/tynor88/socat/</Registry>
   <Repository>tynor88/socat</Repository>
   <Branch>
-    <Tag>master</Tag>
-    <TagDescription>master branch</TagDescription>
-  </Branch>
-  <Branch>
     <Tag>dev</Tag>
     <TagDescription>dev branch</TagDescription>
   </Branch>
