@@ -14,7 +14,7 @@
   <Support>http://lime-technology.com/forum/index.php</Support>
   <Registry>https://hub.docker.com/r/sourcegraph/server/</Registry>
   <GitHub>https://github.com/sourcegraph/sourcegraph</GitHub>
-  <Repository>sourcegraph/sourcegraph</Repository>
+  <Repository>sourcegraph/server</Repository>
   <ExtraParams>-d --rm</ExtraParams>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
