@@ -7,8 +7,8 @@
   <Description>GitLab Community Edition docker image based on the Omnibus package.
     [br][br]&#xD;
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/etc/gitlab[/b] For storing the GitLab configuration files (use cache drive)[br]
-    [b]/var/opt/gitlab[/b] For storing application data (use cache drive)[br]
+    [b]/etc/gitlab[/b] For storing the GitLab configuration files[br]
+    [b]/var/opt/gitlab[/b] For storing application data[br]
     [b]/var/log/gitlab[/b] For storing logs[br]
   </Description>
   <Overview>GitLab Community Edition docker image based on the Omnibus package.</Overview>
@@ -41,17 +41,17 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/gitlab-ce/config</HostDir>
+      <HostDir>/mnt/user/appdata/gitlab-ce/config</HostDir>
       <ContainerDir>/etc/gitlab</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/gitlab-ce/data</HostDir>
+      <HostDir>/mnt/user/appdata/gitlab-ce/data</HostDir>
       <ContainerDir>/var/opt/gitlab</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/gitlab-ce/log</HostDir>
+      <HostDir>/mnt/user/appdata/gitlab-ce/log</HostDir>
       <ContainerDir>/var/log/gitlab</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -64,7 +64,7 @@
   <Config Type="Port" Name="Web Interface Port (HTTP)" Target="9080" Default="9080" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's Web UI port you can access via a web browser.">9080</Config>
   <Config Type="Port" Name="Web Interface Port (HTTPS)" Target="9443" Default="9443" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's Web UI SSL port you can access via a web browser.">9443</Config>
   <Config Type="Port" Name="SSH Port" Target="22" Default="9022" Mode="tcp" Display="always-hide" Required="true" Description="This is GitLab's SSH port.">9022</Config>
-  <Config Type="Path" Name="Config Storage Path" Target="/etc/gitlab" Default="/mnt/cache/appdata/gitlab-ce/config" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its configuration files (use cache drive).">/mnt/cache/appdata/gitlab-ce/config</Config>
-  <Config Type="Path" Name="Application Data Storage Path" Target="/var/opt/gitlab" Default="/mnt/cache/appdata/gitlab-ce/data" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its application data (use cache drive).">/mnt/cache/appdata/gitlab-ce/data</Config>
-  <Config Type="Path" Name="Log Storage Path" Target="/var/log/gitlab" Default="/mnt/cache/appdata/gitlab-ce/log" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its logs.">/mnt/cache/appdata/gitlab-ce/log</Config>
+  <Config Type="Path" Name="Config Storage Path" Target="/etc/gitlab" Default="/mnt/user/appdata/gitlab-ce/config" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its configuration files.">/mnt/user/appdata/gitlab-ce/config</Config>
+  <Config Type="Path" Name="Application Data Storage Path" Target="/var/opt/gitlab" Default="/mnt/user/appdata/gitlab-ce/data" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its application data.">/mnt/user/appdata/gitlab-ce/data</Config>
+  <Config Type="Path" Name="Log Storage Path" Target="/var/log/gitlab" Default="/mnt/user/appdata/gitlab-ce/log" Mode="rw" Display="advanced-hide" Required="true" Description="This is where GitLab will store its logs.">/mnt/user/appdata/gitlab-ce/log</Config>
 </Container>
