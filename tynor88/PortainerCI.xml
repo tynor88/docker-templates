@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <TemplateURL>https://github.com/frakman1/docker-templates/blob/master/PortainerCI.xml</TemplateURL>
+  <TemplateURL>https://github.com/frakman1/docker-templates/blob/master/tynor88/PortainerCI.xml</TemplateURL>
   <Date>2021-01-31</Date>
   <Beta>False</Beta>
   <Category>Network:Management Productivity: Tools:</Category>
