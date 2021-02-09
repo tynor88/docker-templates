@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>http://lime-technology.com/forum/index.php?topic=45839.0</Support>
+  <Support>https://forums.unraid.net/topic/102294-support-frakman-jcr/</Support>
   <Project>https://jfrog.com/</Project>
   <Overview>
   The JFrog Container Registry is a repository manager, which supports Docker and Helm registries and Generic repositories, allowing you to build, deploy and manage your container images while providing powerful features with fine-grained permission control behind a sleek and easy-to-use UI.
