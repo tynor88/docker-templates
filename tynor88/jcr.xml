@@ -13,7 +13,7 @@
   The JFrog Container Registry is a repository manager, which supports Docker and Helm registries and Generic repositories, allowing you to build, deploy and manage your container images while providing powerful features with fine-grained permission control behind a sleek and easy-to-use UI.
   </Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:8182]/</WebUI>
+  <WebUI>http://[IP]:[PORT:6182]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/frakman1/docker-templates/master/tynor88/jcr.xml</TemplateURL>
   <Icon>https://i.imgur.com/VeVxi03.png</Icon>
   <ExtraParams/>
@@ -23,7 +23,7 @@
   <Description>
   See installation details here: https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-DockerInstallation
   Default credentials are admin/password
-  WebUI will briefly be on port 8181 while coming up before switching over to 8182 for the running instance.
+  WebUI will briefly be on port 6181 while coming up before switching over to 6182 for the running instance.
   </Description>
   <Networking>
     <Mode>bridge</Mode>
