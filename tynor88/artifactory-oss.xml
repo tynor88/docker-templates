@@ -9,7 +9,7 @@
   <Privileged>true</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=45839.0</Support>
   <Project>https://jfrog.com/</Project>
-  <Overview>JFrog’s Artifactory open source project was created to speed up development cycles using binary repositories. It’s the world’s most advanced repository manager, creating a single place for teams to manage all their binary artifacts efficiently.  </Overview>
+  <Overview>JFrog’s Artifactory open source project was created to speed up development cycles using binary repositories. It’s the world’s most advanced repository manager, creating a single place for teams to manage all their binary artifacts efficiently.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8181]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/jenkins.xml</TemplateURL>
@@ -18,7 +18,7 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1612836204</DateInstalled>
-  <Description>JFrog’s Artifactory open source project was created to speed up development cycles using binary repositories. It’s the world’s most advanced repository manager, creating a single place for teams to manage all their binary artifacts efficiently.  </Description>
+  <Description>JFrog’s Artifactory open source project was created to speed up development cycles using binary repositories. It’s the world’s most advanced repository manager, creating a single place for teams to manage all their binary artifacts efficiently.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
