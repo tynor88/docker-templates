@@ -29,12 +29,12 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8182</HostPort>
+        <HostPort>6182</HostPort>
         <ContainerPort>8082</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>8181</HostPort>
+        <HostPort>6181</HostPort>
         <ContainerPort>8081</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -61,8 +61,8 @@
   </Environment>
   <Labels/>
   <Config Name="EXTRA_JAVA_OPTIONS" Target="EXTRA_JAVA_OPTIONS" Default="-Xmx512m" Mode="" Description="Container Variable: EXTRA_JAVA_OPTIONS" Type="Variable" Display="always" Required="false" Mask="false">-Xms512m -Xmx2g -Xss256k -XX:+UseG1GC</Config>
-  <Config Name="Port 8082" Target="8082" Default="" Mode="tcp" Description="Container Port: 8082" Type="Port" Display="always" Required="false" Mask="false">8182</Config>
-  <Config Name="Port 8081" Target="8081" Default="" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="false" Mask="false">8181</Config>
+  <Config Name="Port 8082" Target="8082" Default="" Mode="tcp" Description="Container Port: 8082" Type="Port" Display="always" Required="false" Mask="false">6182</Config>
+  <Config Name="Port 8081" Target="8081" Default="" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="false" Mask="false">6181</Config>
   <Config Name="--user" Target="--user" Default="" Mode="" Description="Container Variable: --user" Type="Variable" Display="always" Required="false" Mask="false">${UID}:${GID}</Config>
   <Config Name="/var/opt/jfrog/artifactory" Target="/var/opt/jfrog/artifactory" Default="" Mode="rw" Description="/var/opt/jfrog/artifactory" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jcr</Config>
 </Container>
