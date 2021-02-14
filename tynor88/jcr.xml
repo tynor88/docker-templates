@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>JCR</Name>
+  <Repository>releases-docker.jfrog.io/jfrog/artifactory-jcr:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/102294-support-frakman-jcr/</Support>
+  <Project>https://jfrog.com/</Project>
+  <Overview>
+  The JFrog Container Registry is a repository manager, which supports Docker and Helm registries and Generic repositories, allowing you to build, deploy and manage your container images while providing powerful features with fine-grained permission control behind a sleek and easy-to-use UI.
+  </Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:6182]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/frakman1/docker-templates/master/tynor88/jcr.xml</TemplateURL>
+  <Icon>https://i.imgur.com/sC4b5wD.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1612414040</DateInstalled>
+  <Description>
+  See installation details here: https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-DockerInstallation
+  Default credentials are admin/password
+  WebUI will briefly be on port 6181 while coming up before switching over to 6182 for the running instance.
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6182</HostPort>
+        <ContainerPort>8082</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6181</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jcr</HostDir>
+      <ContainerDir>/var/opt/jfrog/artifactory</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>-Xms512m -Xmx2g -Xss256k -XX:+UseG1GC</Value>
+      <Name>EXTRA_JAVA_OPTIONS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>${UID}:${GID}</Value>
+      <Name>--user</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="EXTRA_JAVA_OPTIONS" Target="EXTRA_JAVA_OPTIONS" Default="-Xmx512m" Mode="" Description="Container Variable: EXTRA_JAVA_OPTIONS" Type="Variable" Display="always" Required="false" Mask="false">-Xms512m -Xmx2g -Xss256k -XX:+UseG1GC</Config>
+  <Config Name="Port 8082" Target="8082" Default="" Mode="tcp" Description="Container Port: 8082" Type="Port" Display="always" Required="false" Mask="false">6182</Config>
+  <Config Name="Port 8081" Target="8081" Default="" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="false" Mask="false">6181</Config>
+  <Config Name="--user" Target="--user" Default="" Mode="" Description="Container Variable: --user" Type="Variable" Display="always" Required="false" Mask="false">${UID}:${GID}</Config>
+  <Config Name="/var/opt/jfrog/artifactory" Target="/var/opt/jfrog/artifactory" Default="" Mode="rw" Description="/var/opt/jfrog/artifactory" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jcr</Config>
+</Container>
